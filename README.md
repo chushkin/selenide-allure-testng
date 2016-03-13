@@ -13,6 +13,7 @@ add your credentials in file testng.xml in the project
 To generate Report you should perform following steps:
 
 $ mvn clean test
+
 $ mvn site
 
 
