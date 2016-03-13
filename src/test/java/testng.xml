@@ -7,14 +7,14 @@
 			<class name="com.google.gmail.GMailAuthorizationTest">
 				<methods>
 					<include name="login">
-						<parameter name="login" value="anry.chushkin@gmail.com" />
-						<parameter name="password" value="128333333" />
-						<parameter name="nickname" value="Андрей" />
+						<parameter name="login" value="" />
+						<parameter name="password" value="" />
+						<parameter name="nickname" value="" />
 					</include>
 					<include name="logOut">
-						<parameter name="login" value="anry.chushkin@gmail.com" />
-						<parameter name="password" value="128333333" />
-						<parameter name="nickname" value="Андрей" />
+						<parameter name="login" value="" />
+						<parameter name="password" value="" />
+						<parameter name="nickname" value="" />
 					</include>
 				</methods>
 			</class>
