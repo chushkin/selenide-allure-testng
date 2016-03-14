@@ -7,7 +7,18 @@ import org.openqa.selenium.support.How;
 
 import com.codeborne.selenide.SelenideElement;
 
-public class GoogleMainPage extends Page {
+public class GoogleBasePage extends Page {
+	
+	public static final String PAGE_BASE_URL = "https://www.google.com.ua/";
+	
+	public GoogleBasePage() {
+		super(PAGE_BASE_URL);
+	}
+	
+	public GoogleBasePage(String pageUrl) {
+		super(pageUrl);
+	}
+	
 	@FindBy(how = How.CSS, using = ".gb_P.gb_R")
 	private SelenideElement loginName;
 
@@ -33,5 +44,17 @@ public class GoogleMainPage extends Page {
 	public void logout(){
 		accountButton.click();
 		logoutButton.click();
+	}
+
+	@Override
+	protected void init() {
+		verify();
+		
+	}
+	
+	@Override
+	protected void setUp() {
+		
+		
 	}
 }

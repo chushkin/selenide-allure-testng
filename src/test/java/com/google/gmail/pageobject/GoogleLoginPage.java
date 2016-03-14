@@ -5,9 +5,19 @@ import static com.codeborne.selenide.Selenide.page;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
-public class GoogleLoginPage extends GoogleMainPage{
+import ru.yandex.qatools.allure.annotations.Step;
+
+public class GoogleLoginPage extends GoogleBasePage{
+	
+public static final String PAGE_URL = "/ServiceLogin";
+	
+	public GoogleLoginPage(){
+		super(PAGE_URL);
+	}
+	
 	@FindBy(how = How.ID, using = "Email")
 	private SelenideElement emailInput;
 	
@@ -25,7 +35,7 @@ public class GoogleLoginPage extends GoogleMainPage{
 	}
 	
 	public void clickNext(){
-		nextButton.click();
+		nextButton.shouldBe(Condition.visible).click();
 	}
 	
 	public void enterPassword(String password){
@@ -36,11 +46,12 @@ public class GoogleLoginPage extends GoogleMainPage{
 		signInButton.click();
 	}
 	
-	public GoogleMainPage login(String email, String password){
+	@Step("Login by email:{0}, password {1}")
+	public GoogleBasePage login(String email, String password){
 		enterEmail(email);
 		clickNext();
 		enterPassword(password);
 		clickSignIn();
-		return page(GoogleMainPage.class);
+		return page(GoogleBasePage.class);
 	}
 }

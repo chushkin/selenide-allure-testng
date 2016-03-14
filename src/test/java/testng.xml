@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite1" verbose="1">
-	<parameter name="url" value="https://www.google.com.ua/" />
+<suite name="Google" verbose="1">
+	<parameter name="login" value="" />
+	<parameter name="password" value="" />
+	<parameter name="nickname" value="" />
+
 	<test name="Authorization Test">
 		<classes>
 			<class name="com.google.gmail.GMailAuthorizationTest">
 				<methods>
-					<include name="login">
-						<parameter name="login" value="" />
-						<parameter name="password" value="" />
-						<parameter name="nickname" value="" />
-					</include>
-					<include name="logOut">
-						<parameter name="login" value="" />
-						<parameter name="password" value="" />
-						<parameter name="nickname" value="" />
-					</include>
+					<include name="login"/>
+					<include name="logOut"/>
 				</methods>
 			</class>
 			<class name="com.google.gmail.SearchTest">
