@@ -29,5 +29,10 @@ public abstract class Page {
 	public void verify() {
         Assert.assertTrue(WebDriverRunner.url().contains(getCurrentPage()), "Wrong URL for page: " + this.getClass().getSimpleName());
     }
+	
+	public boolean isCurrent() {
+        return WebDriverRunner.url().contains(getCurrentPage());
+    }
+
 
 }

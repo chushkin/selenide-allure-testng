@@ -4,13 +4,11 @@
 	<parameter name="login" value="" />
 	<parameter name="password" value="" />
 	<parameter name="nickname" value="" />
-
 	<test name="Authorization Test">
 		<classes>
 			<class name="com.google.gmail.GMailAuthorizationTest">
 				<methods>
-					<include name="login"/>
-					<include name="logOut"/>
+					<include name="login" />
 				</methods>
 			</class>
 			<class name="com.google.gmail.SearchTest">

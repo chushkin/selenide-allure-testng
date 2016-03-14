@@ -11,8 +11,11 @@ import ru.yandex.qatools.allure.annotations.Step;
 
 public class GoogleSearchPage extends GoogleBasePage{
 	
-	public static final String PAGE_BASE_URL = "https://www.google.com.ua/";
+	public static final String PAGE_URL = "https://www.google.com.ua/";
 	
+	public GoogleSearchPage(){
+		super(PAGE_URL);
+	}
 	@FindBy(how = How.NAME, using = "q")
 	private SelenideElement searchBox;
 

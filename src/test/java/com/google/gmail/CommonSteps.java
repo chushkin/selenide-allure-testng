@@ -21,13 +21,13 @@ public class CommonSteps {
 	
 	public CommonSteps(){
 		this.mainPage = open(GoogleBasePage.PAGE_BASE_URL, GoogleBasePage.class);
-		
 	}
 	
 	@Step("clear browser cookies")
 	@AfterMethod(alwaysRun = true)
 	public void clearBrowserCookies(ITestResult result) {
 		WebDriverRunner.clearBrowserCache();
+		open(GoogleBasePage.PAGE_BASE_URL);
 	}
 
 

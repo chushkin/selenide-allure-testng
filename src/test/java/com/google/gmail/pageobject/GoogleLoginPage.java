@@ -39,11 +39,11 @@ public static final String PAGE_URL = "/ServiceLogin";
 	}
 	
 	public void enterPassword(String password){
-		passwordInput.setValue(password);
+		passwordInput.shouldBe(Condition.visible).setValue(password);
 	}
 	
 	public void clickSignIn(){
-		signInButton.click();
+		signInButton.shouldBe(Condition.visible).click();
 	}
 	
 	@Step("Login by email:{0}, password {1}")
