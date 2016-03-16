@@ -1,4 +1,5 @@
-package com.google.gmail;
+package tests;
+
 
 
 import static com.codeborne.selenide.Selenide.open;
@@ -8,7 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 
 import com.codeborne.selenide.testng.ScreenShooter;
-import com.google.gmail.pageobject.GoogleBasePage;
+import pages.GoogleBasePage;
 
 import ru.yandex.qatools.allure.annotations.Step;
 

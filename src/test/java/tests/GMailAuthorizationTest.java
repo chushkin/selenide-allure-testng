@@ -1,9 +1,9 @@
-package com.google.gmail;
+package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import com.google.gmail.pageobject.GoogleLoginPage;
+import pages.GoogleLoginPage;
 
 public class GMailAuthorizationTest extends CommonSteps {
 

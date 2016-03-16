@@ -1,4 +1,4 @@
-package com.google.gmail.pageobject;
+package pages;
 
 import org.testng.Assert;
 

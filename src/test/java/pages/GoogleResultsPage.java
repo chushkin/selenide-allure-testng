@@ -1,4 +1,4 @@
-package com.google.gmail.pageobject;
+package pages;
 
 import static com.codeborne.selenide.Selenide.$$;
 

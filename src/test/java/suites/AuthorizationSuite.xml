@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Google" verbose="1">
+	<parameter name="login" value="rg" />
+	<parameter name="password" value="fgd" />
+	<parameter name="nickname" value="dfg" />
+	<test name="Authorization Test">
+		<classes>
+			<class name="tests.GMailAuthorizationTest">
+				<methods>
+					<include name="login" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

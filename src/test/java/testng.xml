@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Google" verbose="1">
-	<parameter name="login" value="" />
-	<parameter name="password" value="" />
-	<parameter name="nickname" value="" />
-	<test name="Authorization Test">
-		<classes>
-			<class name="com.google.gmail.GMailAuthorizationTest">
-				<methods>
-					<include name="login" />
-				</methods>
-			</class>
-			<class name="com.google.gmail.SearchTest">
-				<methods>
-					<include name="search">
-						<parameter name="value" value="java" />
-						<parameter name="result" value="Java" />
-					</include>
-				</methods>
-			</class>
-		</classes>
-	</test>
+<suite name="Google" preserve-order="true">
+	<suite-files>
+		<suite-file path="suites/AuthorizationSuite.xml" />
+		<!-- <suite-file path="suites/SearchSuite.xml" /> -->
+	</suite-files>
 </suite>

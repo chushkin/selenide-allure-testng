@@ -1,4 +1,4 @@
-package com.google.gmail;
+package tests;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
@@ -6,8 +6,8 @@ import static com.codeborne.selenide.Selenide.*;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.google.gmail.pageobject.GoogleResultsPage;
-import com.google.gmail.pageobject.GoogleSearchPage;
+import pages.GoogleResultsPage;
+import pages.GoogleSearchPage;
 
 public class SearchTest extends CommonSteps{
 	

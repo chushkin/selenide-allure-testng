@@ -1,4 +1,4 @@
-package com.google.gmail.pageobject;
+package pages;
 
 import static com.codeborne.selenide.Selenide.page;
 
@@ -25,7 +25,7 @@ public class GoogleBasePage extends Page {
 	@FindBy(how = How.CSS, using = ".gb_P.gb_R")
 	private SelenideElement loginName;
 
-	@FindBy(how = How.CSS, using = "div.gb_mc>a[href*='ServiceLogin']")
+	@FindBy(how = How.CSS, using = "div>a[href*='ServiceLogin']")
 	private SelenideElement loginButton;
 	
 	@FindBy(how = How.CSS, using = "a[href*='https://accounts.google.com/SignOutOptions']")
