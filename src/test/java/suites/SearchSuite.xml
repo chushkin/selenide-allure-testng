@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Google" verbose="1">
-	<test name="Search Test">
+<suite name="Google Search Test" parallel="none">
+	<test name="Search Test" preserve-order="true">
 		<classes>
 			<class name="tests.SearchTest">
 				<methods>

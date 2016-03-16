@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Google" preserve-order="true">
+<suite name="Google test" parallel="none" preserve-order="true">
 	<suite-files>
 		<suite-file path="suites/AuthorizationSuite.xml" />
-		<!-- <suite-file path="suites/SearchSuite.xml" /> -->
+		<suite-file path="suites/SearchSuite.xml" />
 	</suite-files>
 </suite>
